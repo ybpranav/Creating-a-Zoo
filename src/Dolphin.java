@@ -1,4 +1,4 @@
-public class Dolphin extends Animal{
+public class Dolphin extends Animal implements Swim{
     private int swimmingSpeed;
 
     public Dolphin(String nameOfAnimal) {
@@ -26,5 +26,10 @@ public class Dolphin extends Animal{
     @Override
     public void eatingCompleted() {
         System.out.println("Dolphin: I am eating delicious fish");
+    }
+
+    @Override
+    public void swimming() {
+        System.out.println("i am swimming at the speed of "+swimmingSpeed+"nautical miles per hour");
     }
 }
