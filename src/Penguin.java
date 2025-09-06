@@ -3,4 +3,9 @@ public class Penguin extends Animal{
     public void eatingCompleted() {
 
     }
+
+    public Penguin(String nameOfAnimal) {
+        super(nameOfAnimal);
+    }
+
 }
