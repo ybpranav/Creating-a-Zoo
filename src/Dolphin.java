@@ -30,6 +30,6 @@ public class Dolphin extends Animal implements Swim{
 
     @Override
     public void swimming() {
-        System.out.println("i am swimming at the speed of "+swimmingSpeed+"nautical miles per hour");
+        System.out.println("i am swimming at the speed of "+swimmingSpeed+" nautical miles per hour");
     }
 }
