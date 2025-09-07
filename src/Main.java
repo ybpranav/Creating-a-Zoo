@@ -179,17 +179,16 @@ public class Main {
                                 dolphinObject.setColorOfDolphin(keyboard.nextLine());
                                 break;
 
-                            case 2:System.out.println("Height : "+dolphinObject.getHeight());
-                                System.out.println("Weight : "+dolphinObject.getWeight());
-                                System.out.println("Age : "+dolphinObject.getAge());
+                            case 2:System.out.println("Height : "+penguinObject.getHeight());
+                                System.out.println("Weight : "+penguinObject.getWeight());
+                                System.out.println("Age : "+penguinObject.getAge());
                                 System.out.println("Speed : "+dolphinObject.getSwimmingSpeed());
                                 System.out.println("Dolphin color : "+dolphinObject.getColorOfDolphin());
 
                                 break;
-                            case 3:dolphinObject.swimming();
+                            case 3:
                                 break;
-                            case 4:dolphinObject.eatingFood();
-                                dolphinObject.eatingCompleted();
+                            case 4:
                                 break;
                             default:
                                 System.out.println("Not supported");
