@@ -172,18 +172,18 @@ public class Main {
                                 penguinObject.setWeight(keyboard.nextInt());
                                 System.out.println("Enter the Age");
                                 penguinObject.setAge(keyboard.nextInt());
-                                System.out.println("Enter the swimming speed");
-                                dolphinObject.setSwimmingSpeed(keyboard.nextInt());
-                                keyboard.nextLine();
-                                System.out.println("Enter the color of dolphin");
-                                dolphinObject.setColorOfDolphin(keyboard.nextLine());
+                                //System.out.println("Enter the swimming speed");
+                                //dolphinObject.setSwimmingSpeed(keyboard.nextInt());
+                               // keyboard.nextLine();
+                                //System.out.println("Enter the color of dolphin");
+                               // dolphinObject.setColorOfDolphin(keyboard.nextLine());
                                 break;
 
                             case 2:System.out.println("Height : "+penguinObject.getHeight());
                                 System.out.println("Weight : "+penguinObject.getWeight());
                                 System.out.println("Age : "+penguinObject.getAge());
-                                System.out.println("Speed : "+dolphinObject.getSwimmingSpeed());
-                                System.out.println("Dolphin color : "+dolphinObject.getColorOfDolphin());
+                                //System.out.println("Speed : "+dolphinObject.getSwimmingSpeed());
+                                //System.out.println("Dolphin color : "+dolphinObject.getColorOfDolphin());
 
                                 break;
                             case 3:
