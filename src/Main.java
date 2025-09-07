@@ -9,6 +9,7 @@ public class Main {
         Scanner keyboard = new Scanner(System.in);
         Tiger tigerObject=new Tiger("Tiger");
         Dolphin dolphinObject=new Dolphin("Dolphin");
+        Penguin penguinObject=new Penguin("Penguin");
 
         // for loop continuation - 1 represents true
         int continueOuterLoop = 1  ;
@@ -156,8 +157,49 @@ public class Main {
                         System.out.println("Continue with this animal ? (Enter 1 for yes/ 2 for no):");
                         continueInnerLoop = keyboard.nextInt();
                     } while(continueInnerLoop == 1);
-                    break;
 
+                    break;
+                case 3:
+
+                    do {
+                        System.out.println("The animal which is chosen is : "+penguinObject.getNameOfAnimal());
+                        // get menu choice
+                        menuChoice=animalDetailsManipulationMenu(keyboard,penguinObject);
+                        switch (menuChoice) {
+                            case 1:System.out.println("Enter the height");
+                                penguinObject.setHeight(keyboard.nextInt());
+                                System.out.println("Enter the weight");
+                                penguinObject.setWeight(keyboard.nextInt());
+                                System.out.println("Enter the Age");
+                                penguinObject.setAge(keyboard.nextInt());
+                                System.out.println("Enter the swimming speed");
+                                dolphinObject.setSwimmingSpeed(keyboard.nextInt());
+                                keyboard.nextLine();
+                                System.out.println("Enter the color of dolphin");
+                                dolphinObject.setColorOfDolphin(keyboard.nextLine());
+                                break;
+
+                            case 2:System.out.println("Height : "+dolphinObject.getHeight());
+                                System.out.println("Weight : "+dolphinObject.getWeight());
+                                System.out.println("Age : "+dolphinObject.getAge());
+                                System.out.println("Speed : "+dolphinObject.getSwimmingSpeed());
+                                System.out.println("Dolphin color : "+dolphinObject.getColorOfDolphin());
+
+                                break;
+                            case 3:dolphinObject.swimming();
+                                break;
+                            case 4:dolphinObject.eatingFood();
+                                dolphinObject.eatingCompleted();
+                                break;
+                            default:
+                                System.out.println("Not supported");
+
+                        }
+                        System.out.println("Continue with this animal ? (Enter 1 for yes/ 2 for no):");
+                        continueInnerLoop = keyboard.nextInt();
+                    } while(continueInnerLoop == 1);
+
+                    break;
                 default:
                     System.out.println("Sorry no such animal available.");
             }
@@ -178,6 +220,7 @@ public class Main {
         System.out.println("******* ZOO ANIMAL choice menu ******");
         System.out.println("1. Tiger");
         System.out.println("2. Dolphin");
+        System.out.println("3. Penguin");
 
         System.out.println("Enter choice of animal:");
         choiceGivenByUser = keyboard.nextInt();
