@@ -40,9 +40,9 @@ public class Penguin extends Animal implements Walk,Swim{
     @Override
 
     public void walking(){
-
+        System.out.println("I am walking at the speed "+walkSpeed+" mph");
     }
     public void swimming(){
-
+        System.out.println("i am swimming at the speed of "+SwimSpeed+" nautical miles per hour");
     }
 }
