@@ -187,9 +187,14 @@ public class Main {
                                 System.out.println("Swimming Speed : "+penguinObject.getSwimSpeed());
 
                                 break;
-                            case 3:
+                            case 3:if(penguinObject.isSwimming()){
+                                penguinObject.swimming();
+                            }else{
+                                penguinObject.walking();
+                            }
                                 break;
-                            case 4:
+                            case 4:penguinObject.eatingFood();
+                                penguinObject.eatingCompleted();
                                 break;
                             default:
                                 System.out.println("Not supported");
