@@ -1,24 +1,33 @@
 public class Penguin extends Animal implements Walk,Swim{
 
-    private int speed;
+    private int walkSpeed;
+    private int SwimSpeed;
+    private boolean isSwimming;
 
-    public int getSwimming() {
-        return swimming;
+    public int getWalkSpeed() {
+        return walkSpeed;
     }
 
-    public void setSwimming(int swimming) {
-        this.swimming = swimming;
+    public void setWalkSpeed(int walkSpeed) {
+        this.walkSpeed = walkSpeed;
     }
 
-    public int getSpeed() {
-        return speed;
+    public int getSwimSpeed() {
+        return SwimSpeed;
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
+    public void setSwimSpeed(int swimSpeed) {
+        SwimSpeed = swimSpeed;
     }
 
-    private int swimming;
+    public boolean isSwimming() {
+        return isSwimming;
+    }
+
+    public void setSwimming(boolean swimming) {
+        isSwimming = swimming;
+    }
+
     @Override
     public void eatingCompleted() {
         System.out.println("Penguin: I am eating delicious fish");
